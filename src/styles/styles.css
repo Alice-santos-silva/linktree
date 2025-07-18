@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+}
+
+.page-container {
+  min-height: 100vh; /* altura total da tela */
+  display: flex;
+  flex-direction: column;
+  background-color: #f51a67;
+  
+}
+
+.content-wrap {
+  flex: 1; /* essa parte cresce e empurra o footer */
+  
+}

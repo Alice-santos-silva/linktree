@@ -1,0 +1,82 @@
+/* src/styles/Mel.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background-color: #fff;
+  background-image: url("../../../public/imgs/mel1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Imagem de perfil */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f51a67;
+  margin-bottom: 1rem;
+}
+
+/* Nome */
+.nome {
+  font-size: 1.5rem;
+  color: #f51a67;
+  margin-bottom: 2rem;
+}
+
+/* Botões */
+.botoes {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.botoes a {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f51a67;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.botoes a:hover {
+  background-color: #c01352;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .container {
+    padding: 4rem 2rem;
+  }
+
+  .nome {
+    font-size: 2rem;
+  }
+
+  .botoes a {
+    font-size: 1.1rem;
+  }
+}

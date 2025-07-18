@@ -1,0 +1,30 @@
+#main-about {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:   #f51a67;
+  
+}
+
+
+#img-about img {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+#img-about #mobile{
+  background-size: cover;
+}
+
+/* telas maiores */
+@media (max-width: 768px) {
+  #img-about {
+    width: 100vw;
+  }
+
+  #main-about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
