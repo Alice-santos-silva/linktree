@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CHeader.css';
-import logo from '../../../public/imgs/logo.webp'
-import {NavLink} from 'react-router-dom'
+import logo from '../../../public/imgs/logoprincipal.webp';
+import { NavLink } from 'react-router-dom';
 
 function CHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,8 +10,8 @@ function CHeader() {
 
   return (
     <header>
-      <div id='logo'>
-        <img src={`${logo}`} className='logo' alt="Logo" />
+      <div id="logo">
+        <img src={`${logo}`} className="logo" alt="Logo" />
       </div>
 
       {/* Botão hamburguer que aparece só no mobile */}
@@ -23,10 +23,15 @@ function CHeader() {
 
       {/* Menu que aparece/esconde no mobile */}
       <nav className={menuOpen ? 'open' : ''}>
-        <ul className='faixa'>
-          
-          <li><NavLink to="/Mel">Mel Maia</NavLink> <div className='bullet'></div></li>
-          <li><a href="#">Lorenzo Abreu</a></li>
+        <ul className="faixa">
+          <li>
+            <NavLink to="/linktree/mel">Mel Maia</NavLink>
+            <div className="bullet" id="bullet1"></div>
+            <div className="bullet" id="bullet2"></div>
+          </li>
+          <li>
+            <NavLink to="/linktree/lorenzo">Lorenzo Abreu</NavLink>
+          </li>
         </ul>
       </nav>
     </header>

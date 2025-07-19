@@ -12,14 +12,14 @@ body {
 }
 
 /* Container principal */
-.container {
+.container-l {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
   min-height: 100vh;
   background-color: #fff;
-  background-image: url("../../../public/imgs/mel1.jpg");
+  background-image: url("../../../public/imgs/lorenzo1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -35,7 +35,7 @@ body {
 }
 
 /* Nome */
-.nome {
+.nome-l {
   width: 100%;
   max-width: 400px;
   display: flex;
@@ -43,7 +43,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: #f51a67;
+  background-color: #5d2495;
   color: white;
   margin-bottom: 30px;
   border-radius: 20px;
@@ -52,7 +52,7 @@ body {
 }
 
 /* Botões */
-.botoes {
+.botoes-l {
   width: 100%;
   max-width: 400px;
   display: flex;
@@ -60,51 +60,50 @@ body {
   gap: 1rem;
 }
 
-.botoes a {
+.botoes-l a {
   text-align: center;
   padding: 1rem;
-  background-color: #f51a67;
+  background-color: #5d2495;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
   transition: background 0.3s ease;
   display: grid;
+  justify-items: center;
 }
 
-.botoes a:hover {
-  background-color: #c01352;
+.botoes-l a:hover {
+  background-color: #3b1560;
 }
 
-
-.botoes div a:last-child {
+.botoes-l a:last-child {
+  background-color: #fff;
   padding: 1rem;
   display: block;
   margin-right: auto;
   margin-left: auto;
   width: 150px;
-  background-color: #fff;
 }
 
 /* Desktop */
 @media (min-width: 768px) {
-    .container {
+  .container {
     padding: 4rem 2rem;
   }
 
-  .botoes a {
+  .botoes-l a {
     font-size: 1.1rem;
     display: grid;
+    justify-items: center;
   }
 
-  .nome {
+  .botoes-l div a:last-child {
+    background-color: #fff;
+  }
+
+  .nome-l {
     font-size: 1.6rem;
   }
 
-  .botoes a:last-child {
-    background-color: #fff;
-  }
 }
-
-
-

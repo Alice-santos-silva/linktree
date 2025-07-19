@@ -14,3 +14,8 @@ html, body {
   flex: 1; /* essa parte cresce e empurra o footer */
   
 }
+
+ul {
+  list-style: none;
+  color: inherit;
+}

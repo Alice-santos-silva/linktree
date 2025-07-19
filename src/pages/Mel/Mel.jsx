@@ -2,23 +2,37 @@
 import React from 'react';
 import './Mel.css';
 import { NavLink } from 'react-router-dom';
+import profileMel from '../../../public/imgs/profileMel.jpg';
+import logoMaia from '../../../public/imgs/logo.png';
 
 const Mel = () => {
   return (
     <div className="container">
-      <img
-        src="/imgs/profile.jpg"
-        alt="Foto de Perfil"
-        className="profile-img"
-      />
+      <img src={`${profileMel}`} alt="Foto de Perfil" className="profile-img" />
       <h1 className="nome">Mel Maia</h1>
 
       <div className="botoes">
-        <a href="mailto:mel@gmail.com?cc=copiamel@gmail.com">Publicidade</a>
-        <a href="https://www.youtube.com" target="_blank">YouTube</a>
-        <a href="https://www.tiktok.com" target="_blank">TikTok</a>
-        <a href="https://www.siteoficial.com" target="_blank">Site Oficial</a>
+        <a href="mailto:anapaula@zecavitorino.com.br?cc=deboramaiaoriginal@gmail.com">
+          Publicidade
+        </a>
+        <a href="mailto:debora@damaia.art?cc=deboramaiaoriginal@gmail.com">
+          Comercial
+        </a>
+        <a href="mailto:juliana.marinho@zecavitorino.com.br?cc=deboramaiaoriginal@gmail.com">
+          Artístico
+        </a>
+        <a href="https://www.instagram.com/melissamelmaia" target="_blank">
+          Instagram
+        </a>
+        <a href="https://www.tiktok.com/@melmaia?lang=pt-BR" target="_blank">
+          TikTok
+        </a>
         <NavLink to="/linktree">Ir para Início</NavLink>
+        <div>
+          <NavLink to="/linktree">
+            <img src={`${logoMaia}`} alt="logo empresa maia" width={100} />
+          </NavLink>
+        </div>
       </div>
     </div>
   );
